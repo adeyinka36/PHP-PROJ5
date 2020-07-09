@@ -6,14 +6,27 @@
         </a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" style="color: hotpink;">
+                @if($path=="/")
+                    <li class="nav-item active " style="color: hotpink;">
+                @else
+                    <li class="nav-item " style="color: hotpink;">
+                @endif
                     <a class="nav-link" href="/"><b>Home</b></a>
                 </li>
-                <li class="nav-item" style="color: hotpink;">
-                    <a class="nav-link" href="/cats.html"><b>Cats</b></a>
+
+                @if($path=="cats")
+                    <li class="nav-item active " style="color: hotpink;">
+                @else
+                    <li class="nav-item " style="color: hotpink;">
+                @endif
+                    <a class="nav-link" href="/cats"><b>Cats</b></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/dogs.html"><b>Dogs</b></a>
+                @if($path=="dogs")
+                    <li class="nav-item active " style="color: hotpink;">
+                @else
+                    <li class="nav-item " style="color: hotpink;">
+                @endif
+                    <a class="nav-link" href="/dogs"><b>Dogs</b></a>
                 </li>
 
             </ul>

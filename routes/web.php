@@ -13,12 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/dogs', function () {
-    return view('dogs');
-});
-Route::get('/cats', function () {
-    return view('cats');
-});
+Route::get('/',"webController@index");
+Route::get('/dogs','webController@dogs');
+Route::get('/cats', 'webController@cats');

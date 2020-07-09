@@ -9,11 +9,11 @@
 <body style="background-color: #4d4d4d !important">
 
     <!-- START nav.blade.php -->
-    @include("nav");
+    @include("nav")
     <!-- END nav.blade.php -->
 
     <!-- START main -->
-    @yeild("body")
+    @yield("body")
           
                
               
